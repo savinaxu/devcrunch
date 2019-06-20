@@ -1,58 +1,397 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Devcrunch. Designer to Developer.</title>
-    <meta name="description" content="">
-    <meta name="keywords"content="">
+<!DOCTYPE HTML>
+<html>
 
-    <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
-    
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/icomoon.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Devcrunch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:card" content="">
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/icomoon.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- Modernizr JS -->
-    <script src="assets/js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
+	<script src="assets/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+
 </head>
+
 <body>
 
-    <div class="loader"></div>
+	<div class="dc-loader"></div>
 
-    <div class="gototop js-top">
-        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-    </div>
-    
-    <!-- jQuery && JavaScript-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.easing.1.3.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/jquery.stellar.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.countTo.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/magnific-popup-options.js"></script>
-    <script src="assets/js/main.js"></script>
+	<div id="page">
+		<nav class="dc-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-1">
+							<div id="dc-logo"><a href="index.html">Codingcrunch<span>.</span></a></div>
+						</div>
+						<div class="col-xs-11 text-right menu-1">
+							<ul>
+								<li class="active"><a href="index.html">首页</a></li>
+								<li class="has-dropdown">
+									<a href="#">课程介绍</a>
+									<ul class="dropdown">
+										<li><a href="#">全栈开发课程（6~12个月）</a></li>
+										<li><a href="#">备战面试课程（3~6个月）</a></li>
+									</ul>
+								</li>
+								<li><a href="contact.html">联系方式</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+
+		<header id="dc-header" class="dc-cover" role="banner" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeIn">
+								<h1>改变设计师找工作难的现状从Codingcrunch开始</h1>
+								<p>
+									<a class="btn btn-primary btn-lg btn-learn" href="#">课程介绍</a>
+									<a class="btn btn-primary btn-lg btn-video" href="#">联系我们</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- <div id="dc-counter" class="dc-counters">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 text-center animate-box">
+						<span class="dc-counter js-counter" data-from="0" data-to="40356" data-speed="5000"
+							data-refresh-interval="50"></span>
+						<span class="dc-counter-label">学生</span>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<span class="dc-counter js-counter" data-from="0" data-to="30290" data-speed="5000"
+							data-refresh-interval="50"></span>
+						<span class="dc-counter-label">课程</span>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<span class="dc-counter js-counter" data-from="0" data-to="2039" data-speed="5000"
+							data-refresh-interval="50"></span>
+						<span class="dc-counter-label">讲师</span>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<span class="dc-counter js-counter" data-from="0" data-to="997585" data-speed="5000"
+							data-refresh-interval="50"></span>
+						<span class="dc-counter-label">学习</span>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<div id="dc-explore" class="dc-bg-section">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-6 col-md-offset-3 text-center dc-heading">
+						<h2>Codingcrunch介绍</h2>
+						<p>近几年，在美留学的中国毕业生们在美求职面临着空前的挑战。85%的留学生在校期间因为没有职业规划，没有为实习和就业做好准备，没能融入美国主流文化，导致毕业时没能获取工作机会，因而在还没学到美国先进的技术和管理的状态下引咎回国。
+							Codingcrunch致力于为中国留学生提供学业和职业的规划辅导，目前主要面向设计师群体在求职道路上培养知识和技能，规划成功路径。小班化教学，提供最新最热的前沿技术，了解掌握公司对人才的需求与面试流程。
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="dc-explore dc-explore1">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-push-5 animate-box">
+							<img class="img-responsive" src="assets/images/work_1.png" alt="work">
+						</div>
+						<div class="col-md-4 col-md-pull-8 animate-box">
+							<div class="mt">
+								<h3>最新最热的前沿技术</h3>
+								<p>学校学的太fall behind了？没关系，Codingcrunch帮你准备了系统的前沿技术课程，覆盖前端后端以及简历提点和面试要点。</p>
+								<ul class="list-nav">
+									<li><i class="icon-check2"></i>全栈开发项目实践课程</li>
+									<li><i class="icon-check2"></i>至少三个项目覆盖前端、后端、数据库</li>
+									<li><i class="icon-check2"></i>充实简历，真题讲解，内推机会</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="dc-explore">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-pull-1 animate-box">
+							<img class="img-responsive" src="assets/images/work_1.png" alt="work">
+						</div>
+						<div class="col-md-4 animate-box">
+							<div class="mt">
+								<div>
+									<h4><i class="icon-user"></i>从设计师到程序员的转型</h4>
+									<p>讲师将亲身传授自己如何从设计师背景在半年里成功转型成程序员并且拿到数家知名公司offer。</p>
+								</div>
+								<div>
+									<h4><i class="icon-video2"></i>小班化全程中文教学</h4>
+									<p>以中文为主，英语为辅的教学方式让学习更加轻松，知识掌握更加迅速。</p>
+								</div>
+								<div>
+									<h4><i class="icon-shield"></i>提供简历指导以及面试真题</h4>
+									<p>掌握知识并不是求职的最关键。帮助转行的毕业生如何顺利拿到面试，并在面试中脱颖而出，是Codingcrunch的创办的初衷。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="dc-project">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center dc-heading">
+						<h2>学员项目展示</h2>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid proj-bottom">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 dc-project animate-box" data-animate-effect="fadeIn">
+						<a href="https://fridgify.surge.sh/">
+							<img src="assets/images/project-1.png" alt="Fridgify" class="img-responsive">
+							<h3>Fridgify</h3>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 dc-project animate-box" data-animate-effect="fadeIn">
+						<a href="https://homestay-react-app.herokuapp.com/rentals">
+							<img src="assets/images/project-2.png" alt="Homestay" class="img-responsive">
+							<h3>Homestay</h3>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 dc-project animate-box" data-animate-effect="fadeIn">
+						<a href="https://sleepy-fjord-67882.herokuapp.com/">
+							<img src="assets/images/project-3.png" alt="Memory Game" class="img-responsive">
+							<h3>Memory Game</h3>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 dc-project animate-box" data-animate-effect="fadeIn">
+						<a href="http://supasavina.com/WNM608/module14/index.html">
+							<img src="assets/images/project-4.png" alt="Online Shopping Store" class="img-responsive">
+							<h3>Online Shopping Store</h3>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 dc-project animate-box" data-animate-effect="fadeIn">
+						<a href="http://supasavina.com/WNM601/module14/index.html"><img src="assets/images/project-5.png" alt="Travel Mate" class="img-responsive">
+							<h3>Travel Mate</h3>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-6 dc-project animate-box" data-animate-effect="fadeIn">
+						<a href="https://thawing-tundra-33895.herokuapp.com/scrape">
+							<img src="assets/images/project-6.png" alt="News Scrape" class="img-responsive">
+							<h3>News Scrape</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="dc-steps">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center dc-heading">
+						<h2>全栈开发项目实践课程</h2>
+						<p>知识面覆盖前后端以及数据库，还有专业的简历指导以及面试真题分享。还免费提供学校作业指导以及模拟面试服务。</p>
+					</div>
+				</div>
+
+				<div class="row bs-wizard animate-box" style="border-bottom:0;">
+
+					<div class="col-xs-3 bs-wizard-step complete">
+						<div class="text-center bs-wizard-stepnum">
+							<h4>Step 1</h4>
+						</div>
+						<div class="progress">
+							<div class="progress-bar"></div>
+						</div>
+						<a href="#" class="bs-wizard-dot"></a>
+						<div class="bs-wizard-info text-center">
+							<p>前端基础与进阶</p>
+						</div>
+					</div>
+
+					<div class="col-xs-3 bs-wizard-step active">
+						<!-- complete -->
+						<div class="text-center bs-wizard-stepnum">
+							<h4>Step 2</h4>
+						</div>
+						<div class="progress">
+							<div class="progress-bar"></div>
+						</div>
+						<a href="#" class="bs-wizard-dot"></a>
+						<div class="bs-wizard-info text-center">
+							<p>后端基础与进阶</p>
+						</div>
+					</div>
+
+					<div class="col-xs-3 bs-wizard-step disabled">
+						<!-- complete -->
+						<div class="text-center bs-wizard-stepnum">
+							<h4>Step 3</h4>
+						</div>
+						<div class="progress">
+							<div class="progress-bar"></div>
+						</div>
+						<a href="#" class="bs-wizard-dot"></a>
+						<div class="bs-wizard-info text-center">
+							<p>后台数据可视化</p>
+						</div>
+					</div>
+
+					<div class="col-xs-3 bs-wizard-step disabled">
+						<!-- active -->
+						<div class="text-center bs-wizard-stepnum">
+							<h4>Step 4</h4>
+						</div>
+						<div class="progress">
+							<div class="progress-bar"></div>
+						</div>
+						<a href="#" class="bs-wizard-dot"></a>
+						<div class="bs-wizard-info text-center">
+							<p>简历指导与面试培训</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="dc-started" style="background-image:url(assets/images/img_bg_2.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center dc-heading">
+						<h2>你离成功就差一个Codingcrunch</h2>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<p><a href="#" class="btn btn-default btn-lg">免费</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="dc-footer" role="contentinfo">
+			<div class="container">
+				<!-- <div class="row row-pb-md">
+					<div class="col-md-3 dc-widget">
+						<h4>关于Codingcrunch</h4>
+						<p>一些简介</p>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+						<h4>连接1</h4>
+						<ul class="dc-footer-links">
+							<li><a href="#">二级连接1</a></li>
+							<li><a href="#">二级连接1</a></li>
+							<li><a href="#">二级连接1</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+						<h4>连接1</h4>
+						<ul class="dc-footer-links">
+							<li><a href="#">二级连接1</a></li>
+							<li><a href="#">二级连接1</a></li>
+							<li><a href="#">二级连接1</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+						<h4>连接1</h4>
+						<ul class="dc-footer-links">
+							<li><a href="#">二级连接1</a></li>
+							<li><a href="#">二级连接1</a></li>
+							<li><a href="#">二级连接1</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+						<h4>连接1</h4>
+						<ul class="dc-footer-links">
+							<li><a href="#">二级连接1</a></li>
+							<li><a href="#">二级连接1</a></li>
+							<li><a href="#">二级连接1</a></li>
+						</ul>
+					</div>
+				</div> -->
+
+				<div class="row copyright">
+					<div class="col-md-12 text-center">
+						<p>
+							<small class="block">
+								Codingcrunch 
+							</small>
+						</p>
+						<p>
+							<ul class="dc-social-icons">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- js -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.easing.1.3.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/jquery.countTo.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/magnific-popup-options.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
+
 </html>
